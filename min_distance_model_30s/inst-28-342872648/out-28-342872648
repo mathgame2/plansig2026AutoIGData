@@ -1,0 +1,67 @@
+2026-01-08 17:20:33: /home/tw74/Desktop/AutoIG-personal/scripts/wrapper.py 28 1 342872648 dummy -g_n_bots 40 -g_n_shelves_col 13 -g_n_shelves_row 8 -g_percent_min_distance 28
+{'generalSettings': {'experimentType': 'discriminating', 'modelFile': '/home/tw74/Desktop/AutoIG-personal/data/models/mapf/simple-problem.essence', 'generatorFile': '/home/tw74/Desktop/AutoIG-personal/data/models/mapf/basic/basic.essence', 'runDir': '/home/tw74/Desktop/AutoIG-personal/experiment/mapfBasic30'}, 'generatorSettings': {'genSRTimeLimit': '60', 'genSRFlags': '-S0 -no-bound-vars', 'genSolver': 'minion', 'genSolverTimeLimit': '5', 'genSolverFlags': '-varorder domoverwdeg -valorder random'}, 'evaluationSettings': {'nEvaluations': 1, 'gradedTypes': 'all', 'scoringMethod': 'complete', 'baseSolver': {'name': '/home/tw74/Desktop/MAPF-ICBS-master/code/run_experiments.py', 'solverMinTime': 1, 'totalTimeLimit': 30, 'solverFlags': '--disjoint --hlsolver ICBS', 'translateScriptPath': '/home/tw74/Desktop/AutoIG-personal/scripts/mapf_utils.py', 'solveFunctionName': 'call_solve_cbs_mapf'}, 'favouredSolver': {'name': '/home/tw74/Desktop/MAPF-encodings-main/release/MAPF', 'totalTimeLimit': 30, 'solverFlags': '-e at_parallel_soc_all', 'translateScriptPath': '/home/tw74/Desktop/AutoIG-personal/scripts/mapf_utils.py', 'solveFunctionName': 'call_solve_sat_mapf'}}}
+
+
+2026-01-08 17:20:33: Creating generator instance: ./detailed-output/gen-inst-28.param
+2026-01-08 17:20:33: conjure translate-parameter --eprime=./detailed-output/generator.eprime --essence-param=./detailed-output/gen-inst-28.param --eprime-param=./detailed-output/gen-inst-28.eprime-param
+2026-01-08 17:20:33: savilerow ./detailed-output/generator.eprime ./detailed-output/gen-inst-28.eprime-param -out-aux ./detailed-output/gen-inst-28.aux -out-minion ./detailed-output/gen-inst-28.minion -save-symbols -timelimit 60 -S0 -no-bound-vars
+2026-01-08 17:20:34: minion ./detailed-output/gen-inst-28.minion -solsout ./detailed-output/gen-inst-28.solution -randomseed 342872648 -timelimit 5 -varorder domoverwdeg -valorder random
+2026-01-08 17:20:34: savilerow ./detailed-output/generator.eprime -mode ReadSolution -out-aux ./detailed-output/gen-inst-28.aux -out-solution ./detailed-output/gen-inst-28.solution.eprime-param -minion-sol-file ./detailed-output/gen-inst-28.solution
+2026-01-08 17:20:34: conjure translate-solution --eprime=./detailed-output/generator.eprime --essence-param=./detailed-output/gen-inst-28.param --eprime-solution=./detailed-output/gen-inst-28.solution.eprime-param --essence-solution ./detailed-output/gen-inst-28.solution.param
+
+
+2026-01-08 17:20:35: 
+Generator results: genInstance=gen-inst-28, genStatus=sat, genSRTime=0.8555636405944824, genSolverTime=0.04556608200073242
+
+
+2026-01-08 17:20:35: Solving ./detailed-output/inst-28-342872648.param...
+Solversetting:  -e at_parallel_soc_all
+About to enter loop for nEvaluations
+Running command: /home/tw74/Desktop/MAPF-encodings-main/release/MAPF -s ./detailed-output/inst-28-342872648.scen -m ./detailed-output -l 2 -f ./detailed-output/inst-28-342872648-sat-mapf.out -t 30 -e at_parallel_soc_all
+Solversetting:  --disjoint --hlsolver ICBS
+About to enter loop for nEvaluations
+Bot 0 505 148: start (11, 32) -> end (3, 19)
+Bot 1 847 339: start (19, 30) -> end (7, 38)
+Bot 2 785 38: start (18, 11) -> end (0, 38)
+Bot 3 474 472: start (11, 1) -> end (10, 42)
+Bot 4 5 553: start (0, 5) -> end (12, 37)
+Bot 5 231 255: start (5, 16) -> end (5, 40)
+Bot 6 424 665: start (9, 37) -> end (15, 20)
+Bot 7 597 274: start (13, 38) -> end (6, 16)
+Bot 8 581 817: start (13, 22) -> end (19, 0)
+Bot 9 305 340: start (7, 4) -> end (7, 39)
+Bot 10 778 811: start (18, 4) -> end (18, 37)
+Bot 11 150 802: start (3, 21) -> end (18, 28)
+Bot 12 756 775: start (17, 25) -> end (18, 1)
+Bot 13 271 776: start (6, 13) -> end (18, 2)
+Bot 14 161 826: start (3, 32) -> end (19, 9)
+Bot 15 776 318: start (18, 2) -> end (7, 17)
+Bot 16 615 39: start (14, 13) -> end (0, 39)
+Bot 17 317 169: start (7, 16) -> end (3, 40)
+Bot 18 111 747: start (2, 25) -> end (17, 16)
+Bot 19 489 244: start (11, 16) -> end (5, 29)
+Bot 20 360 686: start (8, 16) -> end (15, 41)
+Bot 21 372 560: start (8, 28) -> end (13, 1)
+Bot 22 825 20: start (19, 8) -> end (0, 20)
+Bot 23 695 840: start (16, 7) -> end (19, 23)
+Bot 24 754 309: start (17, 23) -> end (7, 8)
+Bot 25 43 829: start (1, 0) -> end (19, 12)
+Bot 26 206 102: start (4, 34) -> end (2, 16)
+Bot 27 851 363: start (19, 34) -> end (8, 19)
+Bot 28 673 558: start (15, 28) -> end (12, 42)
+Bot 29 131 163: start (3, 2) -> end (3, 34)
+Bot 30 798 815: start (18, 24) -> end (18, 41)
+Bot 31 850 731: start (19, 33) -> end (17, 0)
+Bot 32 437 849: start (10, 7) -> end (19, 32)
+Bot 33 152 443: start (3, 23) -> end (10, 13)
+Bot 34 663 389: start (15, 18) -> end (9, 2)
+Bot 35 787 134: start (18, 13) -> end (3, 5)
+Bot 36 123 544: start (2, 37) -> end (12, 28)
+Bot 37 498 6: start (11, 25) -> end (0, 6)
+Bot 38 679 239: start (15, 34) -> end (5, 24)
+Bot 39 837 4: start (19, 20) -> end (0, 4)
+Running command: python3 /home/tw74/Desktop/MAPF-ICBS-master/code/run_experiments.py --instance "./detailed-output/inst-28-342872648.txt" --disjoint --hlsolver ICBS
+Solved by all base runs: False
+instance results ******* {'instance': './detailed-output/inst-28-342872648.param', 'status': 'ok', 'score': -9999, 'results': {'base': {'runs': [{'seed': 342872648, 'status': 'solverTimeOut', 'SRTime': 0, 'solverTime': 30}]}, 'favoured': {'runs': [{'seed': 342872648, 'status': 'sat', 'SRTime': 0, 'solverTime': 12.434}]}}}
+{'totalTime': 73.83595776557922, 'genResults': {'instance': 'gen-inst-28.param', 'status': 'sat', 'seed': 342872648, 'SRTime': 0.8555636405944824, 'solverTime': 0.04556608200073242}, 'instanceResults': {'instance': './detailed-output/inst-28-342872648.param', 'status': 'ok', 'score': -9999, 'results': {'base': {'runs': [{'seed': 342872648, 'status': 'solverTimeOut', 'SRTime': 0, 'solverTime': 30}]}, 'favoured': {'runs': [{'seed': 342872648, 'status': 'sat', 'SRTime': 0, 'solverTime': 12.434}]}}}, 'status': 'ok', 'score': -9999}
+-9999 73.84
