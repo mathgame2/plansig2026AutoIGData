@@ -6,11 +6,11 @@ Each instance will have a folder containing: input files for the two solvers, th
 
 There is a cvs file per model that lists the instances and the time taken for each solver to solve the instance.
 
-## models
+## generator model overviews
 
-The simple model parameterises # of rows, # of columns, and # of bots. All other factors are fixed.
+The simple model parameterises # of rows, # of columns, and # of bots of an instance. All other factors are fixed.
 
-The minimum distance model introduces parameterises the minimum distance between the start and end locations of bots. This value is a percentage of the longest distance possible, which is opposite ends of the map.
+The minimum distance model parameterises the minimum distance between the start and end locations of bots. This value is a percentage of the longest distance possible, which is opposite ends of the map.
 
 The corridor model adds to the min distance model by parameterising the corridor size between shelves.
 
