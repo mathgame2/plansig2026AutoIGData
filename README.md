@@ -1,4 +1,4 @@
-# plansig2026Data
+# plansig2026AutoIGData
 
 Each folder contains the discriminating instances found for each model. 
 
