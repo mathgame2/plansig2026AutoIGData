@@ -1,0 +1,30 @@
+2026-01-12 16:29:37: /home/tw74/Desktop/AutoIG-personal/scripts/wrapper.py 6 1 1986739145 dummy -g_n_bots 5 -g_corridor_size 6 -g_n_shelves_col 38 -g_n_shelves_row 26 -g_percent_min_distance 80
+{'generalSettings': {'experimentType': 'discriminating', 'modelFile': '/home/tw74/Desktop/AutoIG-personal/data/models/mapf/simple-problem.essence', 'generatorFile': '/home/tw74/Desktop/AutoIG-personal/data/models/mapf/corridor/corridor.essence', 'runDir': '/home/tw74/Desktop/AutoIG-personal/experiment/corridorReverse'}, 'generatorSettings': {'genSRTimeLimit': '60', 'genSRFlags': '-S0 -no-bound-vars', 'genSolver': 'minion', 'genSolverTimeLimit': '5', 'genSolverFlags': '-varorder domoverwdeg -valorder random'}, 'evaluationSettings': {'nEvaluations': 1, 'gradedTypes': 'all', 'scoringMethod': 'complete', 'baseSolver': {'name': '/home/tw74/Desktop/MAPF-encodings-main/release/MAPF', 'solverMinTime': 1, 'totalTimeLimit': 5, 'solverFlags': '-e at_parallel_soc_all', 'translateScriptPath': '/home/tw74/Desktop/AutoIG-personal/scripts/mapf_utils.py', 'solveFunctionName': 'call_solve_sat_mapf'}, 'favouredSolver': {'name': '/home/tw74/Desktop/MAPF-ICBS-master/code/run_experiments.py', 'totalTimeLimit': 5, 'solverFlags': '--disjoint --hlsolver ICBS', 'translateScriptPath': '/home/tw74/Desktop/AutoIG-personal/scripts/mapf_utils.py', 'solveFunctionName': 'call_solve_cbs_mapf'}}}
+
+
+2026-01-12 16:29:37: Creating generator instance: ./detailed-output/gen-inst-6.param
+2026-01-12 16:29:37: minion ./detailed-output/gen-inst-6.minion -solsout ./detailed-output/gen-inst-6.solution -randomseed 1986739145 -timelimit 5 -varorder domoverwdeg -valorder random
+2026-01-12 16:29:37: savilerow ./detailed-output/generator.eprime -mode ReadSolution -out-aux ./detailed-output/gen-inst-6.aux -out-solution ./detailed-output/gen-inst-6.solution.eprime-param -minion-sol-file ./detailed-output/gen-inst-6.solution
+2026-01-12 16:29:37: conjure translate-solution --eprime=./detailed-output/generator.eprime --essence-param=./detailed-output/gen-inst-6.param --eprime-solution=./detailed-output/gen-inst-6.solution.eprime-param --essence-solution ./detailed-output/gen-inst-6.solution.param
+
+
+2026-01-12 16:29:37: 
+Generator results: genInstance=gen-inst-6, genStatus=sat, genSRTime=0, genSolverTime=0.11700582504272461
+
+
+2026-01-12 16:29:37: Solving ./detailed-output/inst-6-1986739145.param...
+Solversetting:  --disjoint --hlsolver ICBS
+About to enter loop for nEvaluations
+Bot 0 53960 7387: start (175, 60) -> end (23, 303)
+Bot 1 17275 55738: start (56, 27) -> end (180, 298)
+Bot 2 2754 56102: start (8, 290) -> end (182, 46)
+Bot 3 53845 4019: start (174, 253) -> end (13, 15)
+Bot 4 6788 52648: start (22, 12) -> end (170, 288)
+Running command: python3 /home/tw74/Desktop/MAPF-ICBS-master/code/run_experiments.py --instance "./detailed-output/inst-6-1986739145.txt" --disjoint --hlsolver ICBS
+Solversetting:  -e at_parallel_soc_all
+About to enter loop for nEvaluations
+Running command: /home/tw74/Desktop/MAPF-encodings-main/release/MAPF -s ./detailed-output/inst-6-1986739145.scen -m ./detailed-output -l 2 -f ./detailed-output/inst-6-1986739145-sat-mapf.out -t 5 -e at_parallel_soc_all
+Solved by all base runs: True
+instance results ******* {'instance': './detailed-output/inst-6-1986739145.param', 'status': 'ok', 'score': -91.57999999999998, 'results': {'base': {'runs': [{'seed': 1986739145, 'status': 'sat', 'SRTime': 0, 'solverTime': 4.579}]}, 'favoured': {'runs': [{'seed': 1986739145, 'status': 'sat', 'SRTime': 0, 'solverTime': 0.05}]}}}
+{'totalTime': 6.697202682495117, 'genResults': {'instance': 'gen-inst-6.param', 'status': 'sat', 'seed': 1986739145, 'SRTime': 0, 'solverTime': 0.11700582504272461}, 'instanceResults': {'instance': './detailed-output/inst-6-1986739145.param', 'status': 'ok', 'score': -91.57999999999998, 'results': {'base': {'runs': [{'seed': 1986739145, 'status': 'sat', 'SRTime': 0, 'solverTime': 4.579}]}, 'favoured': {'runs': [{'seed': 1986739145, 'status': 'sat', 'SRTime': 0, 'solverTime': 0.05}]}}}, 'status': 'ok', 'score': -91.57999999999998}
+-91.57999999999998 6.7

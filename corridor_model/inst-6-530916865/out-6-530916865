@@ -1,0 +1,30 @@
+2026-01-12 16:34:44: /home/tw74/Desktop/AutoIG-personal/scripts/wrapper.py 6 1 530916865 dummy -g_n_bots 5 -g_corridor_size 6 -g_n_shelves_col 38 -g_n_shelves_row 26 -g_percent_min_distance 80
+{'generalSettings': {'experimentType': 'discriminating', 'modelFile': '/home/tw74/Desktop/AutoIG-personal/data/models/mapf/simple-problem.essence', 'generatorFile': '/home/tw74/Desktop/AutoIG-personal/data/models/mapf/corridor/corridor.essence', 'runDir': '/home/tw74/Desktop/AutoIG-personal/experiment/corridorReverse'}, 'generatorSettings': {'genSRTimeLimit': '60', 'genSRFlags': '-S0 -no-bound-vars', 'genSolver': 'minion', 'genSolverTimeLimit': '5', 'genSolverFlags': '-varorder domoverwdeg -valorder random'}, 'evaluationSettings': {'nEvaluations': 1, 'gradedTypes': 'all', 'scoringMethod': 'complete', 'baseSolver': {'name': '/home/tw74/Desktop/MAPF-encodings-main/release/MAPF', 'solverMinTime': 1, 'totalTimeLimit': 5, 'solverFlags': '-e at_parallel_soc_all', 'translateScriptPath': '/home/tw74/Desktop/AutoIG-personal/scripts/mapf_utils.py', 'solveFunctionName': 'call_solve_sat_mapf'}, 'favouredSolver': {'name': '/home/tw74/Desktop/MAPF-ICBS-master/code/run_experiments.py', 'totalTimeLimit': 5, 'solverFlags': '--disjoint --hlsolver ICBS', 'translateScriptPath': '/home/tw74/Desktop/AutoIG-personal/scripts/mapf_utils.py', 'solveFunctionName': 'call_solve_cbs_mapf'}}}
+
+
+2026-01-12 16:34:44: Creating generator instance: ./detailed-output/gen-inst-6.param
+2026-01-12 16:34:44: minion ./detailed-output/gen-inst-6.minion -solsout ./detailed-output/gen-inst-6.solution -randomseed 530916865 -timelimit 5 -varorder domoverwdeg -valorder random
+2026-01-12 16:34:49: savilerow ./detailed-output/generator.eprime -mode ReadSolution -out-aux ./detailed-output/gen-inst-6.aux -out-solution ./detailed-output/gen-inst-6.solution.eprime-param -minion-sol-file ./detailed-output/gen-inst-6.solution
+2026-01-12 16:34:49: conjure translate-solution --eprime=./detailed-output/generator.eprime --essence-param=./detailed-output/gen-inst-6.param --eprime-solution=./detailed-output/gen-inst-6.solution.eprime-param --essence-solution ./detailed-output/gen-inst-6.solution.param
+
+
+2026-01-12 16:34:49: 
+Generator results: genInstance=gen-inst-6, genStatus=sat, genSRTime=0, genSolverTime=4.946477651596069
+
+
+2026-01-12 16:34:49: Solving ./detailed-output/inst-6-530916865.param...
+Solversetting:  --disjoint --hlsolver ICBS
+About to enter loop for nEvaluations
+Bot 0 15677 56060: start (50, 277) -> end (182, 4)
+Bot 1 55513 1222: start (180, 73) -> end (3, 298)
+Bot 2 49634 5539: start (161, 46) -> end (17, 303)
+Bot 3 15385 54847: start (49, 293) -> end (178, 23)
+Bot 4 3965 44663: start (12, 269) -> end (145, 3)
+Running command: python3 /home/tw74/Desktop/MAPF-ICBS-master/code/run_experiments.py --instance "./detailed-output/inst-6-530916865.txt" --disjoint --hlsolver ICBS
+Solversetting:  -e at_parallel_soc_all
+About to enter loop for nEvaluations
+Running command: /home/tw74/Desktop/MAPF-encodings-main/release/MAPF -s ./detailed-output/inst-6-530916865.scen -m ./detailed-output -l 2 -f ./detailed-output/inst-6-530916865-sat-mapf.out -t 5 -e at_parallel_soc_all
+Solved by all base runs: True
+instance results ******* {'instance': './detailed-output/inst-6-530916865.param', 'status': 'ok', 'score': -91.12499999999999, 'results': {'base': {'runs': [{'seed': 530916865, 'status': 'sat', 'SRTime': 0, 'solverTime': 3.645}]}, 'favoured': {'runs': [{'seed': 530916865, 'status': 'sat', 'SRTime': 0, 'solverTime': 0.04}]}}}
+{'totalTime': 10.29189682006836, 'genResults': {'instance': 'gen-inst-6.param', 'status': 'sat', 'seed': 530916865, 'SRTime': 0, 'solverTime': 4.946477651596069}, 'instanceResults': {'instance': './detailed-output/inst-6-530916865.param', 'status': 'ok', 'score': -91.12499999999999, 'results': {'base': {'runs': [{'seed': 530916865, 'status': 'sat', 'SRTime': 0, 'solverTime': 3.645}]}, 'favoured': {'runs': [{'seed': 530916865, 'status': 'sat', 'SRTime': 0, 'solverTime': 0.04}]}}}, 'status': 'ok', 'score': -91.12499999999999}
+-91.12499999999999 10.29

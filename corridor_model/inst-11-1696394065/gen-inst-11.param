@@ -1,0 +1,5 @@
+letting g_n_bots be 15
+letting g_corridor_size be 5
+letting g_n_shelves_col be 21
+letting g_n_shelves_row be 42
+letting g_percent_min_distance be 49

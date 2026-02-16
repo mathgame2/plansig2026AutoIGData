@@ -1,0 +1,18 @@
+language Essence 1.3
+
+letting bot_end be
+        [1008, 1538, 1345, 1753, 586, 266, 33, 8, 254, 768, 134, 1331, 523, 1551, 1596, 531, 167, 937, 1525, 23, 1785,
+         281, 816;
+             int(1..23)]
+letting bot_start be
+        [271, 504, 48, 488, 712, 366, 212, 1281, 35, 273, 485, 722, 116, 211, 1052, 670, 414, 1789, 1068, 715, 1705,
+         1214, 1393;
+             int(1..23)]
+letting bots be 23
+letting buffer_col be 2
+letting buffer_row be 2
+letting corridor_size be 1
+letting n_shelves_col be 8
+letting n_shelves_row be 30
+letting shelf_col_size be 2
+letting shelf_row_size be 1

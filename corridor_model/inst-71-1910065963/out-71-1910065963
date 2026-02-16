@@ -1,0 +1,42 @@
+2026-01-12 16:31:10: /home/tw74/Desktop/AutoIG-personal/scripts/wrapper.py 71 1 1910065963 dummy -g_n_bots 17 -g_corridor_size 2 -g_n_shelves_col 1 -g_n_shelves_row 32 -g_percent_min_distance 58
+{'generalSettings': {'experimentType': 'discriminating', 'modelFile': '/home/tw74/Desktop/AutoIG-personal/data/models/mapf/simple-problem.essence', 'generatorFile': '/home/tw74/Desktop/AutoIG-personal/data/models/mapf/corridor/corridor.essence', 'runDir': '/home/tw74/Desktop/AutoIG-personal/experiment/corridor'}, 'generatorSettings': {'genSRTimeLimit': '60', 'genSRFlags': '-S0 -no-bound-vars', 'genSolver': 'minion', 'genSolverTimeLimit': '5', 'genSolverFlags': '-varorder domoverwdeg -valorder random'}, 'evaluationSettings': {'nEvaluations': 1, 'gradedTypes': 'all', 'scoringMethod': 'complete', 'baseSolver': {'name': '/home/tw74/Desktop/MAPF-ICBS-master/code/run_experiments.py', 'solverMinTime': 1, 'totalTimeLimit': 5, 'solverFlags': '--disjoint --hlsolver ICBS', 'translateScriptPath': '/home/tw74/Desktop/AutoIG-personal/scripts/mapf_utils.py', 'solveFunctionName': 'call_solve_cbs_mapf'}, 'favouredSolver': {'name': '/home/tw74/Desktop/MAPF-encodings-main/release/MAPF', 'totalTimeLimit': 5, 'solverFlags': '-e at_parallel_soc_all', 'translateScriptPath': '/home/tw74/Desktop/AutoIG-personal/scripts/mapf_utils.py', 'solveFunctionName': 'call_solve_sat_mapf'}}}
+
+
+2026-01-12 16:31:10: Creating generator instance: ./detailed-output/gen-inst-71.param
+2026-01-12 16:31:10: minion ./detailed-output/gen-inst-71.minion -solsout ./detailed-output/gen-inst-71.solution -randomseed 1910065963 -timelimit 5 -varorder domoverwdeg -valorder random
+2026-01-12 16:31:11: savilerow ./detailed-output/generator.eprime -mode ReadSolution -out-aux ./detailed-output/gen-inst-71.aux -out-solution ./detailed-output/gen-inst-71.solution.eprime-param -minion-sol-file ./detailed-output/gen-inst-71.solution
+2026-01-12 16:31:11: conjure translate-solution --eprime=./detailed-output/generator.eprime --essence-param=./detailed-output/gen-inst-71.param --eprime-solution=./detailed-output/gen-inst-71.solution.eprime-param --essence-solution ./detailed-output/gen-inst-71.solution.param
+
+
+2026-01-12 16:31:12: 
+Generator results: genInstance=gen-inst-71, genStatus=sat, genSRTime=0, genSolverTime=0.7462735176086426
+
+
+2026-01-12 16:31:12: Solving ./detailed-output/inst-71-1910065963.param...
+Solversetting:  -e at_parallel_soc_all
+About to enter loop for nEvaluations
+Running command: /home/tw74/Desktop/MAPF-encodings-main/release/MAPF -s ./detailed-output/inst-71-1910065963.scen -m ./detailed-output -l 2 -f ./detailed-output/inst-71-1910065963-sat-mapf.out -t 5 -e at_parallel_soc_all
+Solversetting:  --disjoint --hlsolver ICBS
+About to enter loop for nEvaluations
+Bot 0 325 792: start (40, 5) -> end (99, 0)
+Bot 1 478 24: start (59, 6) -> end (3, 0)
+Bot 2 586 117: start (73, 2) -> end (14, 5)
+Bot 3 9 664: start (1, 1) -> end (83, 0)
+Bot 4 329 799: start (41, 1) -> end (99, 7)
+Bot 5 644 136: start (80, 4) -> end (17, 0)
+Bot 6 6 524: start (0, 6) -> end (65, 4)
+Bot 7 792 319: start (99, 0) -> end (39, 7)
+Bot 8 25 518: start (3, 1) -> end (64, 6)
+Bot 9 563 7: start (70, 3) -> end (0, 7)
+Bot 10 630 93: start (78, 6) -> end (11, 5)
+Bot 11 692 214: start (86, 4) -> end (26, 6)
+Bot 12 473 23: start (59, 1) -> end (2, 7)
+Bot 13 167 686: start (20, 7) -> end (85, 6)
+Bot 14 508 26: start (63, 4) -> end (3, 2)
+Bot 15 277 728: start (34, 5) -> end (91, 0)
+Bot 16 47 741: start (5, 7) -> end (92, 5)
+Running command: python3 /home/tw74/Desktop/MAPF-ICBS-master/code/run_experiments.py --instance "./detailed-output/inst-71-1910065963.txt" --disjoint --hlsolver ICBS
+Solved by all base runs: False
+instance results ******* {'instance': './detailed-output/inst-71-1910065963.param', 'status': 'ok', 'score': -9999, 'results': {'base': {'runs': [{'seed': 1910065963, 'status': 'solverTimeOut', 'SRTime': 0, 'solverTime': 5}]}, 'favoured': {'runs': [{'seed': 1910065963, 'status': 'sat', 'SRTime': 0, 'solverTime': 0.054}]}}}
+{'totalTime': 11.368658304214478, 'genResults': {'instance': 'gen-inst-71.param', 'status': 'sat', 'seed': 1910065963, 'SRTime': 0, 'solverTime': 0.7462735176086426}, 'instanceResults': {'instance': './detailed-output/inst-71-1910065963.param', 'status': 'ok', 'score': -9999, 'results': {'base': {'runs': [{'seed': 1910065963, 'status': 'solverTimeOut', 'SRTime': 0, 'solverTime': 5}]}, 'favoured': {'runs': [{'seed': 1910065963, 'status': 'sat', 'SRTime': 0, 'solverTime': 0.054}]}}}, 'status': 'ok', 'score': -9999}
+-9999 11.37
